@@ -10,5 +10,5 @@ Built using HTML, CSS and [Staticlyh](https://github.com/Randonlyh/Staticlyh)
 
 ## AI Disclaimer
 
-* Used for a tiny part in `home.css` and then rewriiten
-* Helped with creating browser specific CSS for browser-specific bugs
+* Used initially for the background animation but eventually rewritten
+* Helped with finding a CSS check for Safari to patch the drop shadow
