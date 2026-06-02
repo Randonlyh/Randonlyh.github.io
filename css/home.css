@@ -16,8 +16,11 @@
     text-shadow: 0.4rem 0.4rem 0.75rem rgba(0, 0, 0, 0.5);
 
     /* Supposed fix for Safari rendering shadows darker than other browsers */
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+    @supports (-webkit-touch-callout: none) {
+        .element {
+            text-shadow: none;
+        }
+    }
 
     @media screen and (max-width: 768px) {
         -webkit-text-stroke: 0.3rem black;
@@ -90,10 +93,6 @@ nav ul {
         paint-order: stroke fill;
         -webkit-text-stroke: 0.4rem black;
         text-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.5);
-
-        /* Supposed fix for Safari rendering shadows darker than other browsers */
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
 
         a { color: white; }
         a:hover { color: #A2A2C0; }
