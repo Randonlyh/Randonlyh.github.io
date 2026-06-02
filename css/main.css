@@ -125,6 +125,8 @@ body {
 
     animation: lines 5s linear;
     animation-iteration-count: infinite;
+    
+    overflow: hidden;
 }
 
 /* Firefox mobile seems to die due to the lines, rip */
