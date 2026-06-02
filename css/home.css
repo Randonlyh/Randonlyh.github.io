@@ -13,14 +13,8 @@
     paint-order: stroke fill;
     -webkit-text-stroke: clamp(0.6rem, 0.45rem + 0.3125vw, 1.2rem) black;
 
+    -webkit-font-smoothing: antialiased;
     text-shadow: 0.4rem 0.4rem 0.75rem rgba(0, 0, 0, 0.5);
-
-    /* Supposed fix for Safari rendering shadows darker than other browsers */
-    @supports (-webkit-touch-callout: none) {
-        .element {
-            text-shadow: none;
-        }
-    }
 
     @media screen and (max-width: 768px) {
         -webkit-text-stroke: 0.3rem black;
