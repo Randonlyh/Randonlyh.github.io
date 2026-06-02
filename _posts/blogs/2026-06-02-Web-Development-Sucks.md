@@ -1,6 +1,6 @@
 # Web Development Sucks
 
-Never been a big fan of web development. As someone who got into programming mostly as a result of learning you could mod Mario games on the Wii, I quickly came to appreciate the wonders of making things work efficiently for the hardware and keeping things simple. In web dev it seems to be the opposite?
+I've never been a big fan of web development. As someone who got into programming mostly as a result of learning you could mod Mario games on the Wii, I quickly came to appreciate the wonders of making things work efficiently for the hardware and keeping things simple. In web dev it seems to be the opposite?
 
 *Disclaimer: This is mostly the view of an outsider to web development, and what puts me off of trying to get into this side of Computer Science.*
 
@@ -10,12 +10,18 @@ Now by default on all websites you have the option of HTML, CSS and maybe some J
 
 And I'm not advocating for extreme optimisation in every area, because obviously that is a lot of time and effort for not much reward, but such low hanging fruit like just not using a web framework if not needed is such a big improvement. I know a lot of people go for these frameworks since they are meant to "improve the developer experience", but look, HTML and CSS is not that bad to write at a small scale.
 
-## Abstracting without Hurting
+### Abstracting without Hurting
 
-Now when I said this website was written *purely* in HTML and CSS, I slightly lied. Yes the website you are on does only make use of that, but I made a small tool to convert markdown files into HTML files so I could write these blog posts (and reviews too) in a less verbose format. I believe this is called a Static Site Generator. You can check out the one I wrote [here](https://github.com/Randonlyh/Staticlyh). While I made my own, there are other already existing ones like [Jekyll](https://jekyllrb.com/) which are well maintained and popular (I only made my own one as a fun exercise). I bring this up because, I am technically doing what web developers love to preach in "improving the developer experience", but the difference here is that I'm not degrading the user experience in any way with my tool. In fact, it makes it better. It saves me copy pasting and taking longer to write out these posts, and I can basically guarantee the formatting looks right on every page, all while not sacrificing performance as it's just a pure HTML output.
+Now when I said this website was written *purely* in HTML and CSS, I slightly lied. Yes, the website you are on does only make use of that, but I made a small tool to convert markdown files into HTML files so I could write these blog posts (and reviews too) in a less verbose format. I believe this is called a Static Site Generator. You can check out the one I wrote [here](https://github.com/Randonlyh/Staticlyh). While I made my own, there are other already existing ones like [Jekyll](https://jekyllrb.com/) which are well maintained and popular (I only made my own one as a fun exercise). I bring this up because, I am technically doing what web developers love to preach in "improving the developer experience", but the difference here is that I'm not degrading the user experience in any way with my tool. In fact, it makes it better. It saves me copy pasting and taking longer to write out these posts, and I can basically guarantee the formatting looks right on every page, all while not sacrificing performance as it's just a pure HTML output.
 
 If I were over-complicating the matter, I could try setting up a backend with a database that you could pull the latest posts from, but what would this actually solve? It would just make the pages longer to load and make things more annoying to setup and host. Sure it looks more impressive on a CV, or it's cooler to talk about how I used X technology to run Y website, but does it actually help the user at all? No.
 
+## Browser Problems Everywhere
+
+When I launched this website, Firefox Mobile would freak out due to the moving lines and Safari would render all the drop shadows completely wrong. By using hacky CSS checks to remove the background lines on Firefox under a certain screen width and reducing the intensity of shadows on Safari (and they still don't look right), I mitigated these issues to an extent. The idea of platform specific support is kinda neat for hardware because you already know going in that each piece of hardware is slightly different. For websites however I simply find it infuriating. The web is built on the idea that you can access it anywhere on any device, so having to do hacky checks to remove or alter things goes entirely against that philosophy, and no amount of framework abstractions can really get you passed it.
+
+This isn't so much web developers fault rather than the web *browser* developers fault, but it still leads to a crummy experience, and it's not really fun.
+
 ## Conclusion or Something
 
-I am basically writing this post to say hey, obviously it's important to make it easier to write up these sites, but be smart and selective about the abstractions and technologies you use. Not everything needs to have the tech stack of a multi-billion valued company, unless you actually are one.
+I am basically writing this post to say hey, obviously it's important to make it easier to write up these sites, but be smart and selective about the abstractions and technologies you use. Not everything needs to have the tech stack of a multi-billion valued company, unless you actually are one. *(And also get your act together web browser devs...)*
