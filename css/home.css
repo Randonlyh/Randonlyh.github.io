@@ -178,3 +178,8 @@ main {
     justify-content: center;
     align-items: center;
 }
+
+/* Prevent scrolling */
+html, body {
+    overflow: hidden;
+}
