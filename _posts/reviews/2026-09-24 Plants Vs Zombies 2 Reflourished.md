@@ -1,4 +1,4 @@
-# Plants Vs Zombies 2 Reflourished (v1.6.1, 2026)
+# Plants Vs Zombies 2 Reflourished (v1.4.2, 2026)
 
 I have always wanted to properly play through Plants Vs. Zombies 2, but any time I started a playthrough I would quickly drop off after a few worlds. This was due to a variety of factors (with one being that I don't play games on my phone often) but the biggest one really was how with every update (and so every time I'd start a new attempt) the game just kept getting... worse. I'm very thankful this mod exists as a result. And now I can give the verdict that this game is... fine?
 
